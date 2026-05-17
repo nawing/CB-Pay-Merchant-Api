@@ -9,9 +9,6 @@
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
-  "publishConfig": {
-    "access": "restricted"
-  },
   "exports": {
     ".": {
       "import": "./dist/esm/index.js",
