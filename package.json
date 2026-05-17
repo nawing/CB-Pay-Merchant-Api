@@ -1,0 +1,44 @@
+{
+  "name": "cb-pay-merchant-api",
+  "version": "1.0.0",
+  "description": "MMQR, CB Pay - Integration Package",
+  "keywords": [
+    "MMQR",
+    "CB Pay"
+  ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/esm/index.d.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nawing/CB-Pay-Merchant-Api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nawing/CB-Pay-Merchant-Api/issues"
+  },
+  "homepage": "https://github.com/nawing/CB-Pay-Merchant-Api#readme",
+  "scripts": {
+    "build": "npm run clean && tsc && tsc -p tsconfig.cjs.json",
+    "clean": "rm -rf dist",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.3",
+    "typescript": "^5.3.3"
+  },
+  "author": "Naw Ing",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.2"
+  }
+}
