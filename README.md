@@ -27,7 +27,7 @@ Initialize the instance by providing your merchant credentials. The integration 
 import { CBPayMerchantApi } from 'cb-pay-merchant-api';
 
 const cbpay = CBPayMerchantApi({
-  baseUrl: '[https://api.uat.cbbank.com](https://api.uat.cbbank.com)', // Contact CB Pay Team
+  baseUrl: '[https://api.uat.cbbank.com](https://api.uat.cbbank.com)', // <<< I cannot disclose the routes. Contact CB Pay Merchant Onboarding Team
   sourceId: 'YOUR_SOURCE_ID',
   merchantId: 'YOUR_MERCHANT_ID',
   terminalId: 'YOUR_TERMINAL_ID',

@@ -1,4 +1,5 @@
-import { CheckQrRequestOption, CheckQrResponse, CreateQrRequestOption, CreateQrResponse, RefundRequestOption, RefundResponse } from './types';
+import { CheckQrRequest, CheckQrRequestOption, CheckQrResponse, CreateQrRequest, CreateQrRequestOption, CreateQrResponse, GetTokenRequest, GetTokenResponse, RefundRequest, RefundRequestOption, RefundResponse } from './types';
+export { CheckQrRequest, CheckQrRequestOption, CheckQrResponse, CreateQrRequest, CreateQrRequestOption, CreateQrResponse, GetTokenRequest, GetTokenResponse, RefundRequest, RefundRequestOption, RefundResponse };
 /**
  * @Options
  * @Options
@@ -52,4 +53,3 @@ declare class CBPayMerchantClass {
      */
     refund(options: RefundRequestOption): Promise<RefundResponse>;
 }
-export {};
