@@ -25,7 +25,6 @@ const start = async () => {
       transAmount: 5000,
       transCurrency: 'MMK',
       referenceNo: 'TEST-' + new Date().getTime(),
-      // purposeOfTransaction: 'MMK',
     })
     console.log(qrResponse)
     const end3Time = performance.now();

@@ -56,7 +56,8 @@ class CBPayMerchantClass {
         try {
             const config = {
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
                 }
             };
             const payload = {
@@ -86,7 +87,8 @@ class CBPayMerchantClass {
             await this.getToken(); // Get Replay Prevention Token
             const config = {
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
                 }
             };
             const payload = {
@@ -120,7 +122,8 @@ class CBPayMerchantClass {
             await this.getToken(); // Get Replay Prevention Token
             const config = {
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
                 }
             };
             const payload = {
@@ -148,7 +151,8 @@ class CBPayMerchantClass {
             await this.getToken(); // Get Replay Prevention Token
             const config = {
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
                 }
             };
             const payload = {
