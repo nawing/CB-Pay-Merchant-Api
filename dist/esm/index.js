@@ -131,7 +131,7 @@ class CBPayMerchantClass {
                 sourceId: __classPrivateFieldGet(this, _CBPayMerchantClass_sourceId, "f")
             };
             const response = await fetch(`${__classPrivateFieldGet(this, _CBPayMerchantClass_baseUrl, "f")}/dynamicqr/${options.qrReferenceNo}/status`, {
-                method: 'PUT',
+                method: 'PATCH',
                 headers: config.headers,
                 body: JSON.stringify(payload)
             });

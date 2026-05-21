@@ -141,7 +141,7 @@ class CBPayMerchantClass {
         sourceId: this.#sourceId
       }
       const response = await fetch(`${this.#baseUrl}/dynamicqr/${options.qrReferenceNo}/status`, {
-        method: 'PUT',
+        method: 'PATCH',
         headers: config.headers,
         body: JSON.stringify(payload)
       });
