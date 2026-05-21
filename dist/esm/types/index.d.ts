@@ -46,6 +46,8 @@ export interface CheckQrResponse {
     qrReferenceNo: string;
     institutionId: string;
     institutionName: string;
+    transStatusCode: string;
+    transStatusDescription: string;
     merchantId: string;
     message: string;
     remark: string;
