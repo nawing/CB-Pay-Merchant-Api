@@ -1,4 +1,4 @@
-import {CheckQrRequest, CheckQrRequestOption, CheckQrResponse, CreateQrRequest, CreateQrRequestOption, CreateQrResponse, GetTokenRequest, GetTokenResponse, RefundRequest, RefundRequestOption, RefundResponse} from './types';
+import { CheckQrRequest, CheckQrRequestOption, CheckQrResponse, CreateQrRequest, CreateQrRequestOption, CreateQrResponse, GetTokenRequest, GetTokenResponse, RefundRequest, RefundRequestOption, RefundResponse } from './types';
 
 export {
   CheckQrRequest, CheckQrRequestOption, CheckQrResponse, CreateQrRequest, CreateQrRequestOption, CreateQrResponse, GetTokenRequest, GetTokenResponse, RefundRequest, RefundRequestOption, RefundResponse

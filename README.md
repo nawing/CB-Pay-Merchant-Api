@@ -16,7 +16,7 @@ It provides a simple class-based wrapper around the CBPay REST API, handling aut
 ## Installation
 
 ```bash
-npm install cb-pay-merchant-api
+npm install @mmpay-cb-mmqr --save
 ```
 
 ## Initialization
@@ -24,7 +24,7 @@ npm install cb-pay-merchant-api
 Initialize the instance by providing your merchant credentials. The integration kit will automatically handle fetching and attaching the required authorization tokens for subsequent API calls.
 
 ```typescript
-import { CBPayMerchantApi } from 'cb-pay-merchant-api';
+import { CBPayMerchantApi } from '@mmpay-cb-mmqr';
 
 const cbpay = CBPayMerchantApi({
   baseUrl: '[https://api.uat.cbbank.com](https://api.uat.cbbank.com)', // <<< I cannot disclose the routes. Contact CB Pay Merchant Onboarding Team
