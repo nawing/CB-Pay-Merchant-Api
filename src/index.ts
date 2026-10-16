@@ -1,4 +1,4 @@
-import { CheckQrRequest, CheckQrRequestOption, CheckQrResponse, CreateQrRequest, CreateQrRequestOption, CreateQrResponse, GetTokenRequest, GetTokenResponse, RefundRequest, RefundRequestOption, RefundResponse } from './types';
+import {CheckQrRequest, CheckQrRequestOption, CheckQrResponse, CreateQrRequest, CreateQrRequestOption, CreateQrResponse, GetTokenRequest, GetTokenResponse, RefundRequest, RefundRequestOption, RefundResponse} from './types';
 
 export {
   CheckQrRequest, CheckQrRequestOption, CheckQrResponse, CreateQrRequest, CreateQrRequestOption, CreateQrResponse, GetTokenRequest, GetTokenResponse, RefundRequest, RefundRequestOption, RefundResponse
@@ -49,7 +49,7 @@ class CBPayMerchantClass {
   readonly #userId: string;
   readonly #password: string;
 
-  #bToken: string;
+  #bToken: string = '';
 
   constructor(options: InstanceOptions) {
     this.#baseUrl = options.baseUrl;
@@ -85,7 +85,8 @@ class CBPayMerchantClass {
       this.#bToken = originResponse.token;
       return originResponse;
     } catch (error) {
-      console.error(error)
+      console.error(error);
+      throw error;
     }
   }
   /**
@@ -119,7 +120,8 @@ class CBPayMerchantClass {
       });
       return (await response.json()) as CreateQrResponse;
     } catch (error) {
-      console.error(error)
+      console.error(error);
+      throw error;
     }
   }
   /**
@@ -148,6 +150,7 @@ class CBPayMerchantClass {
       return (await response.json()) as CheckQrResponse;
     } catch (error) {
       console.error(error)
+      throw error;
     }
   }
   /**
@@ -180,6 +183,7 @@ class CBPayMerchantClass {
       return (await response.json()) as RefundResponse;
     } catch (error) {
       console.error(error)
+      throw error;
     }
   }
 }

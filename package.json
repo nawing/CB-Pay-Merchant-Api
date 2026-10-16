@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/nawing/CB-Pay-Merchant-Api#readme",
   "engines": {
-    "node": ">=26.0.0",
+    "node": "^26.6.5",
     "bun": ">=1.4.3"
   },
   "scripts": {
@@ -45,7 +45,7 @@
   "devDependencies": {
     "dotenv": "^17.2.2",
     "typescript": "^5.4.0",
-    "@types/node": "^26.0.0"
+    "@types/node": "^26.6.5"
   },
   "publishConfig": {
     "access": "public"
